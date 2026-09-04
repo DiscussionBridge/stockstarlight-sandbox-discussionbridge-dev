@@ -1,13 +1,13 @@
 ---
-title: Stock Starlight control
-description: Fresh stock Starlight control environment for DiscussionBridge testing.
+title: Welcome to Starlight
+description: Get started building your docs site with Starlight.
 template: splash # Remove or comment out this line to display the site sidebar on this page.
 hero:
-  tagline: A deliberately stock control for separating Starlight behavior from DiscussionBridge behavior.
+  tagline: Congrats on setting up a new Starlight project!
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: Stock control
+    - text: Example Guide
       link: /guides/example/
       icon: right-arrow
     - text: Read the Starlight docs
@@ -18,16 +18,23 @@ hero:
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Control boundary
+## Next steps
 
 <CardGrid stagger>
-	<Card title="Stock baseline" icon="pencil">
-		Use this site to reproduce Starlight behavior before adding the adapter.
+	<Card title="Update content" icon="pencil">
+		Edit `src/content/docs/index.mdx` to see this page change.
 	</Card>
-	<Card title="Isolated" icon="document">
-		This environment does not share source or deployment output with the public demo.
+	<Card title="Change page layout" icon="document">
+		Delete `template: splash` in `src/content/docs/index.mdx` to display a
+		sidebar on this page.
 	</Card>
-	<Card title="Noindex" icon="setting">
-		The control may be reset at any time and is excluded from search indexing.
+	<Card title="Add new content" icon="add-document">
+		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	</Card>
+	<Card title="Configure your site" icon="setting">
+		Edit your `sidebar` and other config in `astro.config.mjs`.
+	</Card>
+	<Card title="Read the docs" icon="open-book">
+		Learn more in [the Starlight Docs](https://starlight.astro.build/).
 	</Card>
 </CardGrid>

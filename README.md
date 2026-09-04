@@ -47,3 +47,12 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+
+## DiscussionBridge sandbox boundary
+
+This repository is the stock, plugin-free Starlight control at
+`stockstarlight.sandbox.discussionbridge.dev`. It remains separate from the
+Astro + Starlight adapter-installation sandbox.
+
+Use `npm run deploy:dry-run` to validate the Worker package and `npm run
+deploy` to publish the generated `dist` directory through Cloudflare Workers.
