@@ -1,0 +1,33 @@
+---
+title: Stock Starlight control
+description: Fresh stock Starlight control environment for DiscussionBridge testing.
+template: splash # Remove or comment out this line to display the site sidebar on this page.
+hero:
+  tagline: A deliberately stock control for separating Starlight behavior from DiscussionBridge behavior.
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Stock control
+      link: /guides/example/
+      icon: right-arrow
+    - text: Read the Starlight docs
+      link: https://starlight.astro.build
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Control boundary
+
+<CardGrid stagger>
+	<Card title="Stock baseline" icon="pencil">
+		Use this site to reproduce Starlight behavior before adding the adapter.
+	</Card>
+	<Card title="Isolated" icon="document">
+		This environment does not share source or deployment output with the public demo.
+	</Card>
+	<Card title="Noindex" icon="setting">
+		The control may be reset at any time and is excluded from search indexing.
+	</Card>
+</CardGrid>
