@@ -1,20 +1,15 @@
 # Stock Starlight Sandbox
 
-Source for the [sandbox](https://stockstarlight.sandbox.discussionbridge.dev/). This stock Starlight site serves as the control for the Astro adapter sandbox.
+Use this site to see how Starlight looks on its own. The paired Astro and Starlight sandbox shows the DiscussionBridge integration.
 
-The source uses Starlight and Astro. The paired [Astro and Starlight sandbox](https://astrostarlight.sandbox.discussionbridge.dev/)
-is where the DiscussionBridge integration is exercised.
+[Open the site](https://stockstarlight.sandbox.discussionbridge.dev/) · [Astro and Starlight sandbox](https://astrostarlight.sandbox.discussionbridge.dev/) · [Sandbox chooser](https://sandbox.discussionbridge.dev/)
 
-## Local commands
+## Preview the source
 
 ```sh
 npm ci
 npm run dev
-npm run build
-npm run deploy:dry-run
 ```
 
-Cloudflare Workers serves the generated site. Keep connection secrets in
-protected configuration. Record the package and commit used by a test build.
-
-[Sandbox chooser](https://sandbox.discussionbridge.dev/) · [Starlight documentation](https://starlight.astro.build/)
+See [Versions and Live Status](https://docs.discussionbridge.dev/versions-and-live-status/) for DiscussionBridge source tags
+and deployment records.
